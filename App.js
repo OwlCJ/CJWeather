@@ -9,8 +9,8 @@ export default function App() {
       </View>
       <View style={styles.weather}>
         <View style={styles.day}>
-          <Text>27</Text>
-          <Text>Sunny</Text>
+          <Text style={styles.temp}>27</Text>
+          <Text style={styles.description}>Sunny</Text>
         </View>
       </View>
     </View>
@@ -35,6 +35,15 @@ const styles = StyleSheet.create({
     flex: 3,
   },
   day: {
-    backgroundColor: "teal",
+    flex: 1,
+    alignItems: "center",
+  },
+  temp: {
+    marginTop: 50,
+    fontSize: 148,
+  },
+  description: {
+    marginTop: -20,
+    fontSize: 60,
   },
 });
